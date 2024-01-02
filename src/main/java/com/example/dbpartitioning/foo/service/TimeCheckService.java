@@ -15,7 +15,7 @@ public class TimeCheckService {
     public void saveTime(String tableName, long totalTimeMillis) {
         ExecutionTime executionTime = ExecutionTime.builder()
                 .tableName(tableName)
-                .executionTime(totalTimeMillis)
+                .actualExeTime(totalTimeMillis)
                 .build();
         executionRepository.save(executionTime);
     }

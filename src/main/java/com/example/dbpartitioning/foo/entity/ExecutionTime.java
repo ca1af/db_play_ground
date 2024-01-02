@@ -15,8 +15,8 @@ public class ExecutionTime {
     @Column(nullable = false)
     private long actualExeTime;
     @Builder
-    public ExecutionTime(String tableName, long executionTime) {
+    public ExecutionTime(String tableName, long actualExeTime) {
         this.tableName = tableName;
-        this.actualExeTime = executionTime;
+        this.actualExeTime = actualExeTime;
     }
 }
